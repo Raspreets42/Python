@@ -19,7 +19,7 @@ class GenericTree:
     def printTree(self):
         print()
         spaces = ' ' * self.getLevel() * 5
-        prifix = spaces + '|____' if self.parent else ""
+        prifix = spaces + '|----' if self.parent else ""
         print(prifix + self.data)
         for child in self.children:
             child.printTree()
